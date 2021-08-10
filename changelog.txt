@@ -1,0 +1,5 @@
+3.0.4
+- Upgraded to TouchGFX 4.17.0
+- Upgraded to STM32CubeMX 6.2.1
+- Upgraded to Firmware Package FW_H7 1.9.0
+- Added DefaultTask to allow IP integration out of STM32CubeMX
