@@ -16,79 +16,46 @@ void PIView::tearDownScreen()
     PIViewBase::tearDownScreen();
 }
 
-void PIView::upPressed()
+void PIView::upClicked(uint64_t step)
 {
-	if (piValue > (0xffffffff - (1 << binaryDigit)))
-	{
-		piValue = 0xffffffff;
-	}
-	else
-	{
-		piValue += (1 << binaryDigit);
-	}
-    touchgfx_printf("PI value incremented: %08X\n", piValue);
-    Unicode::snprintf(textAreaPIBuffer, TEXTAREAPI_SIZE, "%08X", piValue);
-    textAreaPI.invalidate();
-    Unicode::snprintfFloat(textAreaFBuffer, TEXTAREAF_SIZE, "%.3f", getFout());
+    if (f_mHz >= (9999999999 - step))
+    {
+    	f_mHz = 9999999999;
+    }
+    else
+    {
+    	f_mHz += step;
+    }
+    uint32_t decPlaces = f_mHz % 1000;
+    uint32_t preDecPlaces = f_mHz / 1000;
+    touchgfx_printf("new F value %u.%u\n", preDecPlaces, decPlaces );
+    Unicode::snprintf(textAreaFBuffer, TEXTAREAF_SIZE, "%07u.%03u", preDecPlaces, decPlaces );
     textAreaF.invalidate();
-}
-
-void PIView::downPressed()
-{
-	if (piValue < ((uint32_t)1 << binaryDigit))
-	{
-		piValue = 0;
-	}
-	else
-	{
-		piValue -= ((uint32_t)1 << binaryDigit);
-	}
-    touchgfx_printf("PI value decremented: %08X\n", piValue);
-    Unicode::snprintf(textAreaPIBuffer, TEXTAREAPI_SIZE, "%08X", piValue);
+    Unicode::snprintf(textAreaPIBuffer, TEXTAREAPI_SIZE, "%09u", getPI());
     textAreaPI.invalidate();
-    Unicode::snprintfFloat(textAreaFBuffer, TEXTAREAF_SIZE, "%.3f", getFout());
+}
+
+void PIView::downClicked(uint64_t step)
+{
+    if (f_mHz < step)
+    {
+    	f_mHz = 0;
+    }
+    else
+    {
+    	f_mHz -= step;
+    }
+    uint32_t decPlaces = f_mHz % 1000;
+    uint32_t preDecPlaces = f_mHz / 1000;
+    touchgfx_printf("new F value %u.%u\n", preDecPlaces, decPlaces );
+    Unicode::snprintf(textAreaFBuffer, TEXTAREAF_SIZE, "%07u.%03u", preDecPlaces, decPlaces );
     textAreaF.invalidate();
+    Unicode::snprintf(textAreaPIBuffer, TEXTAREAPI_SIZE, "%09u", getPI());
+    textAreaPI.invalidate();
 }
 
-void PIView::selectDigit()
+// calculation of the phase increment value of the DDS, given the output frequency:
+uint32_t PIView::getPI()
 {
-	RadioButton * rb = radioButtonGroup1.getSelectedRadioButton();
-	if(rb == &radioButton0)
-	{
-		binaryDigit=0;
-	}
-	else if (rb == &radioButton1)
-	{
-		binaryDigit=4;
-	}
-	else if (rb == &radioButton2)
-	{
-		binaryDigit=8;
-	}
-	else if (rb == &radioButton3)
-	{
-		binaryDigit=12;
-	}
-	else if (rb == &radioButton4)
-	{
-		binaryDigit=16;
-	}
-	else if (rb == &radioButton5)
-	{
-		binaryDigit=20;
-	}
-	else if (rb == &radioButton6)
-	{
-		binaryDigit=24;
-	}
-	else if (rb == &radioButton7)
-	{
-		binaryDigit=28;
-	}
-}
-
-// calculation of the output frequency of the DDS, given the phase increment value:
-double PIView::getFout()
-{
-	return (dacClock * piValue / ((uint64_t)1 << 32));
+	return (f_mHz * 0.001 * dacperiod_s * ((uint64_t)1 << PHASEBITS) + 0.5);
 }

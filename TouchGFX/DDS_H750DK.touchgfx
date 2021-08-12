@@ -252,6 +252,26 @@
             "Moveable": false
           },
           {
+            "Type": "Box",
+            "Color": {
+              "Red": 250,
+              "Green": 250,
+              "Blue": 250
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 81,
+            "Width": 480,
+            "Height": 72,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
             "Type": "TextArea",
             "TextId": "SingleUseId1",
             "TextRotation": "0",
@@ -266,12 +286,12 @@
             "Wildcard1": {
               "TextId": "SingleUseId34",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 20
             },
-            "Name": "textAreaPI",
-            "X": 62,
-            "Y": 55,
-            "Width": 347,
+            "Name": "textAreaF",
+            "X": 2,
+            "Y": 80,
+            "Width": 477,
             "Height": 72,
             "Visible": true,
             "LockPosition": false,
@@ -292,10 +312,10 @@
             "Alpha": 255,
             "AutoSize": true,
             "LineSpacing": 0,
-            "Name": "textArea2",
-            "X": 109,
-            "Y": 27,
-            "Width": 253,
+            "Name": "textAreaHeader",
+            "X": 128,
+            "Y": 16,
+            "Width": 217,
             "Height": 20,
             "Visible": true,
             "LockPosition": false,
@@ -319,310 +339,13 @@
             "Wildcard1": {
               "TextId": "SingleUseId37",
               "UseBuffer": true,
-              "BufferSize": 20
+              "BufferSize": 24
             },
-            "Name": "textAreaF",
-            "X": 62,
-            "Y": 188,
+            "Name": "textAreaPI",
+            "X": 96,
+            "Y": 218,
             "Width": 229,
             "Height": 20,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RepeatButton",
-            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
-            "Alpha": 255,
-            "Delay": 200,
-            "Interval": 50,
-            "Style": "Style9",
-            "Name": "repeatButton_Up",
-            "X": 420,
-            "Y": 37,
-            "Width": 60,
-            "Height": 60,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RepeatButton",
-            "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
-            "Alpha": 255,
-            "Delay": 200,
-            "Interval": 50,
-            "Style": "Style9",
-            "Name": "repeatButton_Down",
-            "X": 420,
-            "Y": 178,
-            "Width": 60,
-            "Height": 60,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "TextArea",
-            "TextId": "SingleUseId26",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "textArea4",
-            "X": 438,
-            "Y": 55,
-            "Width": 24,
-            "Height": 20,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "TextArea",
-            "TextId": "SingleUseId27",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 0,
-              "Green": 0,
-              "Blue": 0
-            },
-            "Alpha": 255,
-            "AutoSize": true,
-            "LineSpacing": 0,
-            "Name": "textArea5",
-            "X": 438,
-            "Y": 198,
-            "Width": 24,
-            "Height": 20,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "ButtonWithIcon",
-            "Pressed": "__designer\\Blue_Buttons_Round_icon_button_pressed.png",
-            "Released": "__designer\\Blue_Buttons_Round_icon_button.png",
-            "Alpha": 255,
-            "IconPressed": "__designer\\Blue_Icons_Back_arrow_32.png",
-            "IconReleased": "__designer\\Blue_Icons_Back_arrow_32.png",
-            "IconX": 22,
-            "IconY": 15,
-            "IconHeight": 30,
-            "IconWidth": 17,
-            "ButtonStyle": "Style5",
-            "IconStyle": "Icon5",
-            "Name": "buttonWithIcon_Back",
-            "X": 0,
-            "Y": 56,
-            "Width": 60,
-            "Height": 60,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": true,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_button_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_button_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_pressed.png",
-            "Style": "Style1",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "radioButton0",
-            "X": 370,
-            "Y": 128,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": false,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_button_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_button_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_pressed.png",
-            "Style": "Style1",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "radioButton7",
-            "X": 62,
-            "Y": 128,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": false,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_button_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_button_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_pressed.png",
-            "Style": "Style1",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "radioButton6",
-            "X": 106,
-            "Y": 128,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": false,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_button_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_button_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_pressed.png",
-            "Style": "Style1",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "radioButton5",
-            "X": 150,
-            "Y": 128,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": false,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_button_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_button_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_pressed.png",
-            "Style": "Style1",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "radioButton4",
-            "X": 194,
-            "Y": 128,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": false,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_button_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_button_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_pressed.png",
-            "Style": "Style1",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "radioButton3",
-            "X": 238,
-            "Y": 128,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": false,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_button_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_button_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_pressed.png",
-            "Style": "Style1",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "radioButton2",
-            "X": 282,
-            "Y": 128,
-            "Width": 44,
-            "Height": 44,
-            "Visible": true,
-            "LockPosition": false,
-            "Draggable": false,
-            "Clickable": false,
-            "Fadeable": false,
-            "Moveable": false
-          },
-          {
-            "Type": "RadioButton",
-            "Alpha": 255,
-            "Selected": false,
-            "Deselectable": false,
-            "FileNameSelected": "__designer\\Blue_Radio_buttons_Radio_button_active.png",
-            "FileNameSelectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_normal.png",
-            "FileNameUnselected": "__designer\\Blue_Radio_buttons_Radio_button_inactive.png",
-            "FileNameUnselectedPressed": "__designer\\Blue_Radio_buttons_Radio_button_pressed.png",
-            "Style": "Style1",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Name": "radioButton1",
-            "X": 326,
-            "Y": 128,
-            "Width": 44,
-            "Height": 44,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -645,13 +368,434 @@
             "Wildcard1": {
               "TextId": "SingleUseId39",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 24
             },
             "Name": "textAreaA",
-            "X": 62,
-            "Y": 208,
+            "X": 96,
+            "Y": 238,
             "Width": 229,
             "Height": 20,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_0",
+            "X": 441,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_1",
+            "X": 396,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_2",
+            "X": 352,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_3",
+            "X": 271,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_4",
+            "X": 227,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_5",
+            "X": 183,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_6",
+            "X": 139,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_7",
+            "X": 96,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_8",
+            "X": 52,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Up_arrow_pressed.png",
+            "Released": "Up_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonUP_9",
+            "X": 8,
+            "Y": 55,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_0",
+            "X": 441,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_1",
+            "X": 396,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_2",
+            "X": 352,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_3",
+            "X": 271,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_4",
+            "X": 227,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_5",
+            "X": 183,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_6",
+            "X": 139,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_7",
+            "X": 96,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_8",
+            "X": 52,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "RepeatButton",
+            "Pressed": "Down_arrow_pressed.png",
+            "Released": "Down_arrow.png",
+            "Alpha": 255,
+            "Delay": 200,
+            "Interval": 50,
+            "Name": "repeatButtonDOWN_9",
+            "X": 8,
+            "Y": 159,
+            "Width": 32,
+            "Height": 19,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "btn_round_pressed.png",
+            "Released": "btn_round.png",
+            "Alpha": 255,
+            "Name": "buttonBACK",
+            "X": 368,
+            "Y": 212,
+            "Width": 97,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId40",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 393,
+            "Y": 228,
+            "Width": 48,
+            "Height": 25,
             "Visible": true,
             "LockPosition": false,
             "Draggable": false,
@@ -662,136 +806,268 @@
         ],
         "Interactions": [
           {
-            "InteractionName": "InteractionBack",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithIcon_Back"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionNone",
-              "ActionComponent": "Main"
-            }
-          },
-          {
-            "InteractionName": "InteractionUp",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "repeatButton_Up"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "upPressed"
-            }
-          },
-          {
-            "InteractionName": "InteractionDown",
-            "HasCompletedTrigger": false,
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "repeatButton_Down"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "downPressed"
-            }
-          },
-          {
             "InteractionName": "Interaction1",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "radioButton0"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_0"
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "selectDigit"
+              "FunctionName": "buttonUP0Clicked"
             }
           },
           {
             "InteractionName": "Interaction2",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "radioButton1"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_1"
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "selectDigit"
+              "FunctionName": "buttonUP1Clicked"
             }
           },
           {
             "InteractionName": "Interaction3",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "radioButton2"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_2"
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "selectDigit"
+              "FunctionName": "buttonUP2Clicked"
             }
           },
           {
             "InteractionName": "Interaction4",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "radioButton3"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_3"
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "selectDigit"
+              "FunctionName": "buttonUP3Clicked"
             }
           },
           {
             "InteractionName": "Interaction5",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "radioButton4"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_4"
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "selectDigit"
+              "FunctionName": "buttonUP4Clicked"
             }
           },
           {
             "InteractionName": "Interaction6",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "radioButton5"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_5"
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "selectDigit"
+              "FunctionName": "buttonUP5Clicked"
             }
           },
           {
             "InteractionName": "Interaction7",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "radioButton6"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_6"
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "selectDigit"
+              "FunctionName": "buttonUP6Clicked"
             }
           },
           {
             "InteractionName": "Interaction8",
             "HasCompletedTrigger": false,
             "Trigger": {
-              "Type": "TriggerRadioButtonSelected",
-              "TriggerComponent": "radioButton7"
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_7"
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "selectDigit"
+              "FunctionName": "buttonUP7Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction9",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_8"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonUP8Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction10",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonUP_9"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonUP9Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction11",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_0"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN0Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction12",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN1Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction13",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_2"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN2Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction14",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_3"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN3Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction15",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_4"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN4Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction16",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_5"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN5Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction17",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_6"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN6Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction18",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_6"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN6Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction19",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_7"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN7Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction20",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_8"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN8Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction21",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "repeatButtonDOWN_9"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "buttonDOWN9Clicked"
+            }
+          },
+          {
+            "InteractionName": "Interaction22",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonBACK"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
             }
           }
         ],
@@ -873,9 +1149,9 @@
           {
             "Type": "Slider",
             "IsHorizontalSlider": true,
-            "BackgroundUnselected": "__designer\\Blue_Slider_Horizontal_Medium_Slider2_square_back.png",
-            "BackgroundSelected": "__designer\\Blue_Slider_Horizontal_Medium_Slider2_square_fill.png",
-            "Indicator": "__designer\\Blue_Slider_Horizontal_Medium_Indicators_Slider2_square_nob.png",
+            "BackgroundUnselected": "__designer\\Dark_Slider_Horizontal_Medium_Slider_Round_back.png",
+            "BackgroundSelected": "__designer\\Dark_Slider_Horizontal_Medium_Slider_Round_Edge_fill.png",
+            "Indicator": "__designer\\Dark_Slider_Horizontal_Small_Indicators_slider_horizontal_small_round_edge_knob.png",
             "BackgroundX": 2,
             "BackgroundY": 6,
             "IndicatorPos": 0,
@@ -887,7 +1163,7 @@
             "Name": "slider_ARR",
             "X": 78,
             "Y": 185,
-            "Width": 338,
+            "Width": 354,
             "Height": 34,
             "Visible": true,
             "LockPosition": false,
@@ -1140,14 +1416,6 @@
         "IsResource": false
       },
       {
-        "TextEntryId": "SingleUseId26",
-        "IsResource": false
-      },
-      {
-        "TextEntryId": "SingleUseId27",
-        "IsResource": false
-      },
-      {
         "TextEntryId": "SingleUseId30",
         "IsResource": false
       },
@@ -1185,6 +1453,10 @@
       },
       {
         "TextEntryId": "SingleUseId39",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId40",
         "IsResource": false
       }
     ],

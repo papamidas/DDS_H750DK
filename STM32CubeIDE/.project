@@ -535,9 +535,44 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/BitmapDatabase.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_btn_round.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_btn_round.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_btn_round_pressed.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_btn_round_pressed.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_DDS_H750DK.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_DDS_H750DK.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Down_arrow.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Down_arrow.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Down_arrow_pressed.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Down_arrow_pressed.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Up_arrow.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Up_arrow.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Up_arrow24.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Up_arrow24.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Up_arrow_pressed.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Up_arrow_pressed.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_Blue_Backgrounds_Main_bg_texture_480x272px.cpp</name>
@@ -570,26 +605,6 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Icons_Back_arrow_32.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/generated/image_Blue_Radio_buttons_Radio_button_active.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_button_active.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_Blue_Radio_buttons_Radio_button_inactive.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_button_inactive.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_Blue_Radio_buttons_Radio_button_normal.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_button_normal.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/generated/image_Blue_Radio_buttons_Radio_button_pressed.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Radio_buttons_Radio_button_pressed.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/generated/image_Blue_Slider_Horizontal_Medium_Indicators_Slider2_square_nob.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Slider_Horizontal_Medium_Indicators_Slider2_square_nob.cpp</locationURI>
@@ -603,6 +618,21 @@
 			<name>Application/User/generated/image_Blue_Slider_Horizontal_Medium_Slider2_square_fill.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Blue_Slider_Horizontal_Medium_Slider2_square_fill.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Dark_Slider_Horizontal_Medium_Slider_Round_back.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Dark_Slider_Horizontal_Medium_Slider_Round_back.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Dark_Slider_Horizontal_Medium_Slider_Round_Edge_fill.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Dark_Slider_Horizontal_Medium_Slider_Round_Edge_fill.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Dark_Slider_Horizontal_Small_Indicators_slider_horizontal_small_round_edge_knob.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/__designer/image_Dark_Slider_Horizontal_Small_Indicators_slider_horizontal_small_round_edge_knob.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/LanguageGb.cpp</name>
