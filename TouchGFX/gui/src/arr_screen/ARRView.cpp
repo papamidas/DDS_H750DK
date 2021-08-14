@@ -9,6 +9,9 @@ ARRView::ARRView()
 void ARRView::setupScreen()
 {
     ARRViewBase::setupScreen();
+    uint8_t arr = presenter->getARR();
+    Unicode::snprintf(textAreaARRBuffer, TEXTAREAARR_SIZE, "%03d", arr);
+    slider_ARR.setValue(arr);
 }
 
 void ARRView::tearDownScreen()
@@ -18,8 +21,8 @@ void ARRView::tearDownScreen()
 
 void ARRView::setARR(int value)
 {
-    arrValue = value;
-    touchgfx_printf("ARR value set: %03d\n", arrValue);
-    Unicode::snprintf(textAreaARRBuffer, TEXTAREAARR_SIZE, "%03d", arrValue);
+    presenter->setARR(value);
+    touchgfx_printf("ARR value set: %03d\n", value);
+    Unicode::snprintf(textAreaARRBuffer, TEXTAREAARR_SIZE, "%03d", value);
     textAreaARR.invalidate();
 }

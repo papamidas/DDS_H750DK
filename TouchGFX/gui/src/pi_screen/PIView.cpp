@@ -9,6 +9,13 @@ PIView::PIView()
 void PIView::setupScreen()
 {
     PIViewBase::setupScreen();
+
+    uint64_t f_mHz = presenter->getF_mHz();
+    uint32_t decPlaces = f_mHz % 1000;
+    uint32_t preDecPlaces = f_mHz / 1000;
+    Unicode::snprintf(textAreaFBuffer, TEXTAREAF_SIZE, "%07u.%03u", preDecPlaces, decPlaces );
+    Unicode::snprintf(textAreaPIBuffer, TEXTAREAPI_SIZE, "%09u", presenter->getPI());
+    Unicode::snprintf(textAreaABuffer, TEXTAREAA_SIZE, "%03d", presenter->getAM());
 }
 
 void PIView::tearDownScreen()
@@ -18,7 +25,8 @@ void PIView::tearDownScreen()
 
 void PIView::upClicked(uint64_t step)
 {
-    if (f_mHz >= (9999999999 - step))
+    uint64_t f_mHz = presenter->getF_mHz();
+	if (f_mHz >= (9999999999 - step))
     {
     	f_mHz = 9999999999;
     }
@@ -26,18 +34,20 @@ void PIView::upClicked(uint64_t step)
     {
     	f_mHz += step;
     }
+	presenter->setF_mHz(f_mHz);
     uint32_t decPlaces = f_mHz % 1000;
     uint32_t preDecPlaces = f_mHz / 1000;
     touchgfx_printf("new F value %u.%u\n", preDecPlaces, decPlaces );
     Unicode::snprintf(textAreaFBuffer, TEXTAREAF_SIZE, "%07u.%03u", preDecPlaces, decPlaces );
     textAreaF.invalidate();
-    Unicode::snprintf(textAreaPIBuffer, TEXTAREAPI_SIZE, "%09u", getPI());
+    Unicode::snprintf(textAreaPIBuffer, TEXTAREAPI_SIZE, "%09u", presenter->getPI());
     textAreaPI.invalidate();
 }
 
 void PIView::downClicked(uint64_t step)
 {
-    if (f_mHz < step)
+	uint64_t f_mHz = presenter->getF_mHz();
+	if (f_mHz < step)
     {
     	f_mHz = 0;
     }
@@ -45,17 +55,12 @@ void PIView::downClicked(uint64_t step)
     {
     	f_mHz -= step;
     }
+	presenter->setF_mHz(f_mHz);
     uint32_t decPlaces = f_mHz % 1000;
     uint32_t preDecPlaces = f_mHz / 1000;
     touchgfx_printf("new F value %u.%u\n", preDecPlaces, decPlaces );
     Unicode::snprintf(textAreaFBuffer, TEXTAREAF_SIZE, "%07u.%03u", preDecPlaces, decPlaces );
     textAreaF.invalidate();
-    Unicode::snprintf(textAreaPIBuffer, TEXTAREAPI_SIZE, "%09u", getPI());
+    Unicode::snprintf(textAreaPIBuffer, TEXTAREAPI_SIZE, "%09u", presenter->getPI());
     textAreaPI.invalidate();
-}
-
-// calculation of the phase increment value of the DDS, given the output frequency:
-uint32_t PIView::getPI()
-{
-	return (f_mHz * 0.001 * dacperiod_s * ((uint64_t)1 << PHASEBITS) + 0.5);
 }

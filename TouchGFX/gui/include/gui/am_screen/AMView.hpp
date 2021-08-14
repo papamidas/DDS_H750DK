@@ -13,7 +13,7 @@ public:
     virtual void tearDownScreen();
     virtual void setAM(int value);
 protected:
-    uint8_t amValue;
+
 };
 
 #endif // AMVIEW_HPP

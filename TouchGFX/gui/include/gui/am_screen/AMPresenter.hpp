@@ -25,6 +25,16 @@ public:
      */
     virtual void deactivate();
 
+    void setAM(uint8_t am)
+    {
+    	model->setAM(am);
+    }
+
+    uint8_t getAM()
+    {
+    	return model->getAM();
+    }
+
     virtual ~AMPresenter() {};
 
 private:

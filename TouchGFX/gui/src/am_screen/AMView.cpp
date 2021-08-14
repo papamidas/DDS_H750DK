@@ -9,6 +9,9 @@ AMView::AMView()
 void AMView::setupScreen()
 {
     AMViewBase::setupScreen();
+    uint8_t am = presenter->getAM();
+    Unicode::snprintf(textAreaAMBuffer, TEXTAREAAM_SIZE, "%03d", am);
+    slider_AM.setValue(am);
 }
 
 void AMView::tearDownScreen()
@@ -18,8 +21,8 @@ void AMView::tearDownScreen()
 
 void AMView::setAM(int value)
 {
-    amValue = value;
-    touchgfx_printf("AM value set: %02X\n", amValue);
-    Unicode::snprintf(textAreaAMBuffer, TEXTAREAAM_SIZE, "%03d", amValue);
+    presenter->setAM(value);
+    touchgfx_printf("AM value set: %02X\n", value);
+    Unicode::snprintf(textAreaAMBuffer, TEXTAREAAM_SIZE, "%03d", value);
     textAreaAM.invalidate();
 }

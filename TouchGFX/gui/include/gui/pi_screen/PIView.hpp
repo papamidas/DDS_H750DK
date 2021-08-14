@@ -33,14 +33,9 @@ public:
     virtual void buttonDOWN7Clicked() { downClicked(10000000); }
     virtual void buttonDOWN8Clicked() { downClicked(100000000); }
     virtual void buttonDOWN9Clicked() { downClicked(1000000000); }
-    uint32_t getPI();
 
 protected:
-    uint64_t f_mHz;
 
-    const uint8_t PHASEBITS = 32;
-    double dacClock = 400e6/22.0;
-    double dacperiod_s = 1/dacClock;
 };
 
 #endif // PIVIEW_HPP

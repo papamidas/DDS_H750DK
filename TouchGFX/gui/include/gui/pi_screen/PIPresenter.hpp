@@ -25,6 +25,26 @@ public:
      */
     virtual void deactivate();
 
+    void setF_mHz(uint64_t f)
+    {
+    	model->setF_mHz(f);
+    }
+
+    uint64_t getF_mHz()
+    {
+    	return model->getF_mHz();
+    }
+
+
+    uint32_t getPI()
+    {
+    	return model->getPI();
+    }
+
+    uint8_t getAM()
+	{
+    	return model->getAM(); }
+
     virtual ~PIPresenter() {};
 
 private:

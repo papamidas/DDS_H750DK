@@ -13,7 +13,7 @@ public:
     virtual void tearDownScreen();
     virtual void setARR(int value);
 protected:
-    uint8_t arrValue;
+
 };
 
 #endif // ARRVIEW_HPP

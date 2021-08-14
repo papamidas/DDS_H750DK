@@ -25,6 +25,17 @@ public:
      */
     virtual void deactivate();
 
+    void setARR(uint8_t arr)
+    {
+    	model->setARR(arr);
+    }
+
+    uint8_t getARR()
+    {
+    	return model->getARR();
+    }
+
+
     virtual ~ARRPresenter() {};
 
 private:
