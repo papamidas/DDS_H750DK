@@ -31,6 +31,9 @@
 *.out
 *.app
 
+# static usage files
+*.su
+
 #folders
 /TouchGFX/generated
 /TouchGFX/build
